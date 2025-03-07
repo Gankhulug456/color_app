@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <title>Panchroma Color APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/gotham-pro-font@1.0.0/fonts.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div class="title-container">
+        <h2>COLORS &<br />SURFACE FINISHES</h2>
+
+        <button class="menu-btn" onclick="toggleMenu()">Matte</button>
+      </div>
+
+      <!-- Dark overlay behind the menu -->
+      <div class="menu-overlay" onclick="toggleMenu()"></div>
+      <div class="menu">
+        <h2>Surface Finishes</h2>
+        <ul>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/matte.png" alt="Matte" class="icon" />
+              <span>Matte</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/celestial.png"
+                alt="Celestial"
+                class="icon"
+              />
+              <span>Celestial</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/galaxy.png" alt="Galaxy" class="icon" />
+              <span>Galaxy</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/satin.png" alt="Satin" class="icon" />
+              <span>Satin</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/silk.png" alt="Silk" class="icon" />
+              <span>Silk</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/starlight.png"
+                alt="Starlight"
+                class="icon"
+              />
+              <span>Starlight</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/translucent.png"
+                alt="Translucent"
+                class="icon"
+              />
+              <span>Translucent</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/uv.png" alt="UV Shift" class="icon" />
+              <span>UV Shift</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/temp.png" alt="Temp Shift" class="icon" />
+              <span>Temp Shift</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/neon.png" alt="Neon" class="icon" />
+              <span>Neon</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/glow.png" alt="Glow" class="icon" />
+              <span>Glow</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/marble.png" alt="Marble" class="icon" />
+              <span>Marble</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/metallic.png" alt="Metallic" class="icon" />
+              <span>Metallic</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img src="finish-icon/luminous.png" alt="Luminous" class="icon" />
+              <span>Luminous</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/gradient_matte.png"
+                alt="Gradient Matte"
+                class="icon"
+              />
+              <span>Gradient Matte</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/gradient_satin.png"
+                alt="Gradient Satin"
+                class="icon"
+              />
+              <span>Gradient Satin</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/gradient_translucent.png"
+                alt="Gradient Translucent"
+                class="icon"
+              />
+              <span>Gradient Translucent</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/gradient_luminous.png"
+                alt="Gradient Luminous"
+                class="icon"
+              />
+              <span>Gradient Luminous</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/dual_matte.png"
+                alt="Dual Matte"
+                class="icon"
+              />
+              <span>Dual Matte</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+          <li class="option" onclick="selectOption(this)">
+            <div class="option-content">
+              <img
+                src="finish-icon/dual_silk.png"
+                alt="Dual Silk"
+                class="icon"
+              />
+              <span>Dual Silk</span>
+            </div>
+            <span class="tick"></span>
+          </li>
+        </ul>
+
+        <button class="accept-btn" onclick="acceptSelection()">Accept</button>
+      </div>
+
+      <div id="photoSection">
+        <img
+          id="selectedImage"
+          src="polyman/polyman/Matte/Panchroma™ Matte Army Red.png"
+          alt="Selected Finish"
+        />
+        <div id="name">
+          <div id="colorName2"></div>
+        </div>
+        <div id="colorName"></div>
+        <div class="color-section">
+          <div class="color-icon-container" id="colorIcons"></div>
+        </div>
+      </div>
+
+      <select id="colorDropdown" class="color-dropdown"></select>
+
+      <div id="detailsSection">
+        <div class="finish-icon-container" id="finishIcons">
+          <h3>Panchroma</h3>
+          <div class="finish-icon-row" id="finishIconsRow1"></div>
+          <div class="divider"></div>
+          <h3>Gradient</h3>
+          <div class="finish-icon-row" id="finishIconsRow2"></div>
+          <div class="divider"></div>
+          <h3>Panchroma Dual</h3>
+          <div class="finish-icon-row" id="finishIconsRow3"></div>
+          <div class="divider"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
