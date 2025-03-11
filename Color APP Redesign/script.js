@@ -81,6 +81,7 @@ const finishes = {
   Celestial: ["#4cc9e2", "#8be4d5", "#804f9e"],
   "Dual Matte": [
     "#f8503f",
+    "#c4504a",
     "#fd595a",
     "#ab4f4e",
     "#e9ab6a",
@@ -120,7 +121,6 @@ const finishes = {
     "#bf3c38",
     "#e83537",
     "#e85154",
-    "#c4504a",
     "#de5c40",
     "#FFA500",
     "#f0b726",
@@ -230,6 +230,7 @@ const imageFilenames = {
   ],
   "Dual Matte": [
     "Panchroma™ Dual Matte Sunrise (Red-Yellow).png",
+    "Panchroma™ Matte Mixed Berries (Red-Dark Blue).png",
     "Panchroma™ Dual Matte Flamingo (Pink-Red).png",
     "Panchroma™ Dual Matte Shadow Red (Black-Red).png",
     "Panchroma™ Dual Matte Foggy Orange (Grey-Orange).png",
@@ -290,7 +291,6 @@ const imageFilenames = {
     "Panchroma™ Matte Army Red.png",
     "Panchroma™ Matte Lava Red.png",
     "Panchroma™ Matte Pastel Watermelon.png",
-    "Panchroma™ Matte Mixed Berries (Red-Dark Blue).png",
     "Panchroma™ Matte Muted Red.png",
     "Panchroma™ Matte Sunrise Orange.png",
     "Panchroma™ Matte Pastel Banana.png",
@@ -614,7 +614,7 @@ function resetDropdownPlaceholder(finish) {
 }
 function updateImage(finish, colorIndex) {
   if (imageFilenames[finish]) {
-    const imagePath = `polyman/${finish}/${imageFilenames[finish][colorIndex]}`;
+    const imagePath = `polyman/polyman/${finish}/${imageFilenames[finish][colorIndex]}`;
     selectedImage.src = imagePath;
 
     // Extract the color name from the image filename
