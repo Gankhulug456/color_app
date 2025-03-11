@@ -614,7 +614,7 @@ function resetDropdownPlaceholder(finish) {
 }
 function updateImage(finish, colorIndex) {
   if (imageFilenames[finish]) {
-    const imagePath = `polyman/polyman/${finish}/${imageFilenames[finish][colorIndex]}`;
+    const imagePath = `polyman/${finish}/${imageFilenames[finish][colorIndex]}`;
     selectedImage.src = imagePath;
 
     // Extract the color name from the image filename
